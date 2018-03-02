@@ -7,10 +7,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
+
+        <div class="container">
+                <div class="jumbotron m-2">
+                  <h1 class="display-3">Trains, Trains, Trains  </h1>
+                  <p class="lead">Find out when the next train arrives!</p>
+                  <hr class="my-2">
+                </div>
+                <div class="container border mb-4 tableBackground">
+                  <h3 class="mt-1">Train Schedule</h3>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Train Name</th>
+                        <th>Destination</th>
+                        <th>First Train Departure</th>
+                        <th>Frequency</th>
+                        <th>Next Arrival</th>
+                        <th>Minutes Away</th>
+                      </tr>
+                    </thead>
+                    <tbody id="table-body">
+                    </tbody>
+                  </table>
+                </div>
+                <div class="container border formBackground mb-5">
+                  <h3 class="mt-1">Add Train</h3>
+                  <form action="" method="get">
+                    <div class="form-group">
+                      <label for="name-input">Train Name</label>
+                      <input type="text" id="nameInput" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="destination-input">Destination</label>
+                      <input type="text" id="destinationInput" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="firstTime-input">First Departure</label>
+                      <input type="" id="firstDepartureInput" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="frequency-input">Frequency</label>
+                      <input type="number" id="frequencyInput" class="form-control" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-2" id="submitBtn">Submit</button>
+                  </form>
+                </div>
+                <footer>
+                  <div class="m-5"></div>
+                </footer>
+              </div>
       
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
